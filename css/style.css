@@ -29,6 +29,9 @@ img {
 .red-text {
   color: var(--color-red);
 }
+.black-text {
+  color: var(--color-black)
+}
 .font-bold {
   font-weight: bold;
 }
