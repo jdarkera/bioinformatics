@@ -8,6 +8,8 @@
   --color-red-hover: #e82b39;
   --color-paragraph: #616161;
   --color-background-gray: #fafbfd;
+  --color-green-background-color: #3cbe74;
+  border-color: #2a8551;
 }
 html {
   font-size: 62.5%;
@@ -89,7 +91,12 @@ img {
   background: var(--color-blue-hover);
 }
 .primary-button {
-  background: var(--color-red);
+  background-color:#3cbe74;
+  /* background: var(--color-green-background-color); */
+  /* font-weight: bold; */
+  color: #fff;
+  font-weight: 500;
+  border-color: #2a8551;
   border-radius: 5px;
   padding: 12px 32px;
   color: var(--color-white);
@@ -123,6 +130,9 @@ img {
   -webkit-transform: scale(1.15);
   transform: scale(1.15);
 }
+.primary-header .logo-container{
+  font-size: 20px;
+}
 .primary-header .menu-container .list-item:not(:last-child) {
   margin-right: 40px;
 }
@@ -139,7 +149,7 @@ img {
 }
 .primary-header .menu-container .list-item .link {
   font-weight: bold;
-  font-size: 1rem;
+  font-size: 1.4rem;
   text-transform: uppercase;
   line-height: 1.2rem;
   letter-spacing: 0.14em;
@@ -207,7 +217,7 @@ img {
 .banner .text-content .description,
 .stay-safe .description,
 .talk-to-experts .text-content .description {
-  font-size: 1.2rem;
+  font-size: 1.5rem;
   line-height: 138.5%;
   margin-bottom: 24px;
   color: var(--color-paragraph);
@@ -396,11 +406,12 @@ img {
 .healthcare .text-content .title {
   font-size: 4.4rem;
   line-height: 4.6rem;
-  margin-bottom: 12px;
+  margin-bottom: 20px;
+  margin-top: 60px;
 }
 .healthcare .text-content .description {
   color: var(--color-paragraph);
-  font-size: 1.2rem;
+  font-size: 1.4rem;
   line-height: 1.6rem;
   letter-spacing: 0.08em;
   max-width: 600px;
@@ -526,4 +537,10 @@ img {
 }
 .menu-lateral .container-menu .list-item a {
   color: var(--color-red);
+}
+/*footer */
+ .footer {
+	margin: 40px 0;
+	color: #888;
+	text-align: center;
 }
