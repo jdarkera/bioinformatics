@@ -4,6 +4,12 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!--Rubic Font-->
+    <!-- <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Rubik:wght@500;700&display=swap" rel="stylesheet"> -->
+    <!-- <link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@0,100;1,100&display=swap" rel="stylesheet"> -->
   
     <!-- Primary Meta Tags -->
     <title>SmartHealth</title>
@@ -17,6 +23,7 @@
     <meta property="og:description" content="With Meta Tags you can edit and experiment with your content then preview how your webpage will look on Google, Facebook, Twitter and more!">
     <meta property="og:image" content="demo.png">
   
+  
     <!-- Twitter -->
     <meta property="twitter:card" content="summary_large_image">
     <meta property="twitter:url" content="https://metatags.io/">
@@ -28,6 +35,7 @@
     <link rel="stylesheet" href="css/style.css">
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@700;800&family=Rubik:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
   </head>
   <header class="primary-header transition">
     <div class="container flex space-btwn center-y-row">
@@ -46,7 +54,15 @@
             <a class="link transition" href="models.html">Models</a>
           </li>
         </ul>
-        <a class="secondary-button flex center-y-row transition" href="http://google.com.br" target="_blank" rel="noopener noreferrer">Log In</a>
+
+    <!-- <div class="navigation">
+        <a class="button" href="">
+  	    <img src="https://pbs.twimg.com/profile_images/378800000639740507/fc0aaad744734cd1dbc8aeb3d51f8729_400x400.jpeg">
+    <div class="logout">LOGOUT</div>
+        </a> 
+</div> -->
+
+        <a class="secondary-button flex center-y-row transition" href="logout.html" target="_blank" rel="noopener noreferrer">LOGOUT</a>
       </nav>
       <a class="burger-menu" title="Abrir menu lateral">
         <svg viewBox="0 0 100 80" width="40" height="40">
@@ -85,24 +101,63 @@
       </ul>
     </div>
   </header>
-  <body> 
+  <body class="product"> 
   <main>
     <section class="stay-safe container flex center-y-row", class= "h-100">
-      <div class="image-content">
+      <!-- <div class="image-content">
         <img src="images/loginpage.png" alt="loginimage" width="338" height="542">
-      </div>
-      <div class="text-content">
-        <h2 class="title">Use <span class="red-text">OpenFDA </span>Trained Models</h2>
-        <p class="description">Machine learning enabled platform to bring FDA bioinformatics to your fingerprints.</p>
+      </div> -->
+      <div class="text-content container">
+        <div class="row">
+          <div class="col-lg-12">
+        <h2 class="title"><span class="red-text">OpenFDA </span>Text Classifier</h2>
+        <p class="description">Classify text into tags like Adverse Events, Device Class, or Approval Type</p>
+        <p class="tags">Malfunction</p>
+        <p class="tags">Serious Injury</p>
+        <p class="tags">Class I</p>
+        <p class="tags">Class II</p>
+        <p class="tags">Class III</p>
+        <p class="tags">510k</p>
+        <p class="tags">PMA</p>
+        <div class="row">
+          <div class="col-md-9 text-input">
+            <p class="enter-text">Test with your own text:</p>
+            <!--Add placeholder adverse event example-->
+          <div class="text-box">Insert Text Here</div>
+
+            <a class="primary1-button transition" style="color:white">Classify Text</a>
+           
+          </div>
+          <h3 class="enter-tag">Tag</h3>
+          <h3 class="enter-tag">Confidence</h3>
+        <div class="col-md-9 tag">
+          <table class="table">
+            <tbody>
+              <tr>
+                <!-- <th><h3 class="enter-tag">Tag</h3></th>
+                <th><h3 class="enter-tag">Confidence</h3></th> -->
+              </tr>
+              <tr>
+               <td class="classifier-tag">Malfunction</td>
+               <td class="confidence">30%</td>
+            </tr>
+            <tr>
+              <td class="classifier-tag">Serious Injury</td> 
+              <td class="confidence">70%</td> 
+            </tr>
+            </tbody>
+          </table>
+          <!-- <h3 class="enter-text">Tag</h3>
+          <h3 class="enter-text">Confidence</h3> -->
+        <!-- <p class="description">Classify text into tags like Malfunction, Adverse Event, Device Class, or Approval Type</p> -->
       </div> 
-     </section> 
+    </section>
             <div class="footer">
               Copyright &copy; 2021 &mdash; SmartHealth
             </div>
           </div>
         </div>
       </div>
-    </section>
   </main>
 
   <script src="js/script.js"></script>
