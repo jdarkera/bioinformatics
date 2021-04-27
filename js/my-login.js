@@ -72,3 +72,6 @@ $(function() {
 		form.addClass('was-validated');
 	});
 });
+
+/* Authentication */
+

@@ -542,7 +542,7 @@ p.description txt-center {
   margin: 25px 0 0 0;
 }
 .menu-lateral .container-menu .list-item a {
-  color: var(--color-red);
+  color: var(--color-black);
 }
 /*footer */
  .footer {
