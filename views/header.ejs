@@ -1,43 +1,37 @@
-
 <!DOCTYPE html>
 <html lang="en" xml:lang="en">
-	<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge"> 
+ <meta http-equiv="Content-Security-Policy" content="default-src 'self' data: gap: https://ssl.gstatic.com 'unsafe-eval' 'unsafe-inline'; style-src 'self' 'unsafe-inline'; media-src *; img-src 'self' data: content:;">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <!--Rubic Font-->
-    <!-- <link rel="preconnect" href="https://fonts.gstatic.com">
-    <link href="https://fonts.googleapis.com/css2?family=Rubik:wght@500;700&display=swap" rel="stylesheet"> -->
-    <!-- <link rel="preconnect" href="https://fonts.gstatic.com">
-<link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@0,100;1,100&display=swap" rel="stylesheet"> -->
-  
-    <!-- Primary Meta Tags -->
-    <title>SmartHealth</title>
-    <meta name="title" content="SmartHealth">
-    <meta name="description" content="With Meta Tags you can edit and experiment with your content then preview how your webpage will look on Google, Facebook, Twitter and more!">
-  
-    <!-- Open Graph / Facebook -->
-    <meta property="og:type" content="website">
-    <meta property="og:url" content="https://metatags.io/">
-    <meta property="og:title" content="SmartHealth - Bioinformatics">
-    <meta property="og:description" content="With Meta Tags you can edit and experiment with your content then preview how your webpage will look on Google, Facebook, Twitter and more!">
-    <meta property="og:image" content="demo.png">
-  
-  
-    <!-- Twitter -->
-    <meta property="twitter:card" content="summary_large_image">
-    <meta property="twitter:url" content="https://metatags.io/">
-    <meta property="twitter:title" content="SmartHealth - Bioinformatics">
-    <meta property="twitter:description" content="With Meta Tags you can edit and experiment with your content then preview how your webpage will look on Google, Facebook, Twitter and more!">
-    <meta property="twitter:image" content="demo.png">
-  
-    <link rel="stylesheet" href="../css/reset.css">
-    <link rel="stylesheet" href="../css/style.css">
-    <link rel="preconnect" href="https://fonts.gstatic.com">
-    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@700;800&family=Rubik:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-  </head>
+  <!-- Primary Meta Tags -->
+  <title>SmartHealth</title>
+  <meta name="title" content="SmartHealth">
+  <meta name="description" content="With Meta Tags you can edit and experiment with your content then preview how your webpage will look on Google, Facebook, Twitter and more!">
+ 
+
+  <!-- Open Graph / Facebook -->
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://metatags.io/">
+  <meta property="og:title" content="SmartHealth - Bioinformatics">
+  <meta property="og:description" content="With Meta Tags you can edit and experiment with your content then preview how your webpage will look on Google, Facebook, Twitter and more!">
+  <meta property="og:image" content="demo.png">
+
+  <!-- Twitter -->
+  <meta property="twitter:card" content="summary_large_image">
+  <meta property="twitter:url" content="https://metatags.io/">
+  <meta property="twitter:title" content="SmartHealth - Bioinformatics">
+  <meta property="twitter:description" content="With Meta Tags you can edit and experiment with your content then preview how your webpage will look on Google, Facebook, Twitter and more!">
+  <meta property="twitter:image" content="demo.png">
+
+  <link rel="stylesheet" href="css/reset.css">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@700;800&family=Rubik:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+</head>
+<body>
   <header class="primary-header transition">
     <div class="container flex space-btwn center-y-row">
       <a title="SmartHealth" href="/" class="logo-container">
@@ -53,17 +47,10 @@
           </li>
           <li class="list-item">
             <a class="link transition" href="models">Models</a>
-          </li>
+          </li> 
+          
         </ul>
-
-    <!-- <div class="navigation">
-        <a class="button" href="">
-  	    <img src="https://pbs.twimg.com/profile_images/378800000639740507/fc0aaad744734cd1dbc8aeb3d51f8729_400x400.jpeg">
-    <div class="logout">LOGOUT</div>
-        </a> 
-</div> -->
-
-        <a class="secondary-button flex center-y-row transition" href="logout" target="_blank" rel="noopener noreferrer">LOGOUT</a>
+        <a class="secondary-button flex center-y-row transition" href="login" target="_blank" rel="noopener noreferrer">Log In</a>
       </nav>
       <a class="burger-menu" title="Abrir menu lateral">
         <svg viewBox="0 0 100 80" width="40" height="40">
@@ -94,85 +81,28 @@
             <path d="M19.9578 17.0961C19.8224 16.5937 19.3032 16.2956 18.7981 16.4302C18.2929 16.5648 17.9931 17.0812 18.1285 17.5835C18.2639 18.0859 18.7831 18.384 19.2882 18.2494C19.7934 18.1148 20.0932 17.5984 19.9578 17.0961Z" fill="#EB5569"/>
           </svg>        
         </a> -->
-        <li class="list-item">
+         <li class="list-item">
           <a class="link transition" href="index">Home</a>
         </li>
         <li class="list-item">
           <a class="link transition" href="dashboard">Dashboard</a>
         <li class="list-item">
           <a class="link transition" href="models">Models</a>
-        </li>
+        </li> 
+        <!-- <component1></component1>
+        <component2></component2>
+        <component3></component3> -->
       </ul>
     </div>
   </header>
-  <body class="product"> 
-  <main>
-    <section class="stay-safe container flex center-y-row", class= "h-100">
-      <!-- <div class="image-content">
-        <img src="images/loginpage.png" alt="loginimage" width="338" height="542">
-      </div> -->
-      <div class="text-content container">
-        <div class="row">
-          <div class="col-lg-12">
-        <h2 class="title"><span class="red-text">OpenFDA </span>Text Classifier</h2>
-        <p class="description">Classify text into tags like Adverse Events, Device Class, or Approval Type</p>
-        <p class="tags">Malfunction</p>
-        <p class="tags">Serious Injury</p>
-        <p class="tags">Class I</p>
-        <p class="tags">Class II</p>
-        <p class="tags">Class III</p>
-        <p class="tags">510k</p>
-        <p class="tags">PMA</p>
-        <div class="row">
-          <div class="col-md-9 text-input">
-            <p class="enter-text">Test with your own text:</p>
-            <!--Add placeholder adverse event example-->
-          <div class="text-box" contentEditable="true">Insert Text Here</div>
-
-            <button type="button" class="primary1-button transition" style="color:white">Classify Text</button>
-           
-          </div>
-          <h3 class="enter-tag">Tag</h3>
-          <h3 class="enter-tag">Confidence</h3>
-        <div class="col-md-9 tag">
-          <table id="ClassifierOutput" class="table">
-            <tbody>
-              <tr>
-                <!-- <th><h3 class="enter-tag">Tag</h3></th>
-                <th><h3 class="enter-tag">Confidence</h3></th> -->
-              </tr>
-              <tr>
-               <td class="classifier-tag">Malfunction</td>
-               <td class="confidence">30%</td>
-            </tr>
-            <tr>
-              <td class="classifier-tag">Serious Injury</td> 
-              <td class="confidence">70%</td> 
-            </tr>
-            </tbody>
-          </table>
-          <!-- <h3 class="enter-text">Tag</h3>
-          <h3 class="enter-text">Confidence</h3> -->
-        <!-- <p class="description">Classify text into tags like Malfunction, Adverse Event, Device Class, or Approval Type</p> -->
-      </div> 
-    </section>
-            <div class="footer">
-              Copyright &copy; 2021 &mdash; SmartHealth
-            </div>
-          </div>
-        </div>
-      </div>
-  </main>
-
-<script type="text/javascript" src="../javascripts/script.js"></script>
-<script type="text/javascript" src="../javascripts/my-login.js"></script>
-<script src="https://cdn.jsdelivr.net/npm/vue@2.6.12/dist/vue.js"></script>
-<script type="text/javascript" src="../javascripts/vue.js"></script>
-<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
-<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
-
-</body>
-</html>
+  <!-- <script> 
+  Vue.component('component1',{
+    template: ' <li class="list-item"><a class="link transition" href="index.html">Home</a></li>'
+});
+Vue.component('component2',{
+    template: '<li class="list-item"><a class="link transition" href="dashboard.html">Dashboard</a></li>'
+});
+Vue.component('component3',{
+    template: '<li class="list-item"><a class="link transition" href="models.html">Models</a></li>'
+});
+</script> -->

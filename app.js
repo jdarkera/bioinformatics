@@ -44,6 +44,7 @@ app.use(expSession);
 app.use (express.static (__dirname + '/public'));
 
 
+
 //=======================
 //      O W A S P
 //=======================
@@ -76,15 +77,20 @@ app.use(helmet());
 app.get("/index", (req, res) => {
     res.render("index");
 })
+
 app.get("/dashboard", (req, res) => {
     res.render("dashboard");
 })
 app.get("/models", (req, res) => {
     res.render("models");
+    // res.render("models", { data: JSON.stringify(data)});
 })
+
+
 app.get("/product", (req, res) => {
     res.render("product");
 })
+
 
 //Auth Routes
 app.get("/login", (req, res) => {
@@ -101,8 +107,6 @@ app.post("/login", passport.authenticate("local", {
 app.get("/register", (req, res) => {
     res.render("register");
 });
-
-
 
 app.post("/register", (req, res) => {
 
@@ -125,12 +129,37 @@ app.get("/logout", (req, res) => {
     res.redirect("/logout");
 });
 
+
+app.get("/admin", (req, res) => {
+    res.render("admin");
+})
+
+app.get("/registrants", (req, res) => {
+    if (req.isAuthenticated()) {
+        User.find({}, function (err, users) {
+            res.render('registrants', {usersList: users});
+        })
+    } else {
+        res.redirect("/admin");
+    }
+})
+
+app.post("/admin", (req, res) => {
+    if (req.body.username == process.env.ADMIN &&
+        req.body.password == process.env.ADMIN_PASSWORD) {
+        res.render("registrants");
+    } else {
+        res.redirect("/admin");
+    }
+})
+
 function isLoggedIn(req, res, next) {
     if (req.isAuthenticated()) {
         return next();
     }
     res.redirect("/login");
 }
+
 
 //Listen On Server
 app.listen(process.env.PORT || 3000, function (err) {
