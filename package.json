@@ -1,27 +1,16 @@
 {
   "name": "bioinformatics",
-  "version": "1.0.0",
-  "description": "bioinformatics ",
-  "main": "index.js",
+  "version": "0.0.0",
+  "private": true,
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "start": "node ./bin/www"
   },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/jdarkera/bioinformatics.git"
-  },
-  "author": "Jerusalem Darkera",
-  "license": "ISC",
-  "bugs": {
-    "url": "https://github.com/jdarkera/bioinformatics/issues"
-  },
-  "homepage": "https://github.com/jdarkera/bioinformatics#readme",
   "dependencies": {
-    "body-parser": "^1.19.0",
-    "connect-ensure-login": "^0.1.1",
-    "express": "^4.17.1",
-    "express-session": "^1.17.1",
-    "mongoose": "^5.12.5",
-    "passport": "^0.4.1"
+    "cookie-parser": "~1.4.4",
+    "debug": "~2.6.9",
+    "ejs": "~2.6.1",
+    "express": "~4.16.1",
+    "http-errors": "~1.6.3",
+    "morgan": "~1.9.1"
   }
 }
