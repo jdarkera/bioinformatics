@@ -14,7 +14,7 @@ const express = require('express'),
 
 
 //Connecting database
-mongoose.connect("mongodb://localhost/auth_demo");
+mongoose.connect("mongodb://localhost/SmartHealthDatabase");
 
 const expSession = require("express-session")({
     secret: "mysecret", //decode or encode session
