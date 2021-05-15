@@ -4,7 +4,7 @@
  * Bootstrap 4 Login Page
  *
  ******************************************/
-
+ 
 'use strict';
 
 $(function() {

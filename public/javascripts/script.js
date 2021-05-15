@@ -1,3 +1,4 @@
+
 document.addEventListener("DOMContentLoaded", function() {
   
   function menuFixed() {
@@ -68,3 +69,15 @@ document.addEventListener("DOMContentLoaded", function() {
 toggleMenu();
 
 });
+// demo product page 
+function myDemo() {
+  var x = document.getElementById("ClassifierOutput");
+  if (x.display === "none") {
+    x.display = "block";
+  } else {
+    x.style.display = "none";
+  }
+} 
+// document.getElementById("ClassifierOutput").addEventListener("click", myDemo);
+
+
