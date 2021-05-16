@@ -70,14 +70,14 @@ toggleMenu();
 
 });
 // demo product page 
+const classifierButton = document.getElementById("classifier-button")
+classifierButton.addEventListener('click', myDemo)
 function myDemo() {
+  console.log("test");
   var x = document.getElementById("ClassifierOutput");
-  if (x.display === "none") {
-    x.display = "block";
+  if (x.style.display === "none") {
+    x.style.display = "block";
   } else {
     x.style.display = "none";
   }
-} 
-// document.getElementById("ClassifierOutput").addEventListener("click", myDemo);
-
-
+}

@@ -151,15 +151,15 @@
           <div class="col-md-9 text-input">
             <p class="enter-text">Test with your own text:</p>
             <!--Add placeholder adverse event example-->
-          <div class="text-box" contentEditable="true">Insert Text Here</div>
+          <div class="text-box" contentEditable="true">The programmer's display screen on my pacemaker was unable to be calibrated. The calibration worked well in the two corners that the calibration software used but the other two corners were bad. Within a day, the stylus and display were off calibration by 0. 5 to 1 inch depending on the corner. The programmer has been returned to service. There was no patient involvement.</div>
 
-            <button on-click="myDemo()" button" class="primary1-button transition" style="color:white">Classify Text</button>
+            <button id="classifier-button" class="primary1-button transition" style="color:white">Classify Text</button>
            
           </div>
           <h3 class="enter-tag">Tag</h3>
           <h3 class="enter-tag">Confidence</h3>
-        <div class="col-md-9 tag">
-          <table id="ClassifierOutput" class="table">
+        <div  id="ClassifierOutput" class="col-md-9 tag">
+          <table class="table">
             <tbody>
               <tr>
                 <!-- <th><h3 class="enter-tag">Tag</h3></th>
@@ -167,11 +167,11 @@
               </tr>
               <tr>
                <td class="classifier-tag">Malfunction</td>
-               <td class="confidence">30%</td>
+               <td class="confidence">70%</td>
             </tr>
             <tr>
               <td class="classifier-tag">Serious Injury</td> 
-              <td class="confidence">70%</td> 
+              <td class="confidence">30%</td> 
             </tr>
             </tbody>
           </table>
@@ -179,6 +179,7 @@
           <h3 class="enter-text">Confidence</h3> -->
         <!-- <p class="description">Classify text into tags like Malfunction, Adverse Event, Device Class, or Approval Type</p> -->
       </div> 
+    
     </section>
             <div class="footer">
               Copyright &copy; 2021 &mdash; SmartHealth
