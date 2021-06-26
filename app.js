@@ -87,8 +87,7 @@ app.get("/models", (req, res) => {
 })
 
 
-app.get("/product", (req, res) => {
-    res.render("product");
+app.get("/product", (req, res) => {    res.render("product");
 })
 
 
@@ -102,8 +101,8 @@ app.get("/forgot", (req, res) => {
 
 app.post("/login", passport.authenticate("local", {
     successRedirect: "/product",
-    failureRedirect: "/forgot"
-}), function (req, res) {});
+    failureRedirect: "/login"
+}), function (req, res) {console.log("test")});
 app.get("/register", (req, res) => {
     res.render("register");
 });
@@ -113,7 +112,6 @@ app.post("/register", (req, res) => {
     User.register(new User({
         username: req.body.username,
         email: req.body.email,
-        phone: req.body.phone
     }), req.body.password, function (err, user) {
         if (err) {
             console.log(err);
@@ -128,7 +126,6 @@ app.get("/logout", (req, res) => {
     req.logout();
     res.redirect("/logout");
 });
-
 
 app.get("/admin", (req, res) => {
     res.render("admin");
@@ -162,10 +159,11 @@ function isLoggedIn(req, res, next) {
 
 
 //Listen On Server
-app.listen(process.env.PORT || 3000, function (err) {
-    if (err) {
-        console.log(err);
-    } else {
-        console.log("Server Started At Port 3000");
-    }
-});
+
+// app.listen(process.env.PORT || 3000, function (err) {
+//     if (err) {
+//         console.log(err);
+//     } else {
+//         console.log("Server Started At Port 3000");
+//     }
+// });
