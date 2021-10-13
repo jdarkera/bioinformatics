@@ -18,7 +18,7 @@ III. Target Audience
 
 Our target audience are healthcare technology leaders, entrepreneurs, and industry-specific regulatory stakeholders. 
 
-IV. Core/Key Features
+IV. Core/Key Features: https://github.com/jdarkera/bioinformatics/blob/master/Project2-wireframes.pdf
 Please see wireframes.pdf to see design/prototype. 
 
 1)Landing Page:
